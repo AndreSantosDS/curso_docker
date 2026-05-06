@@ -1,0 +1,5 @@
+Podemos remover um container da máquina que estamos executando o docker;
+O comando é docker rm <id ou name>;
+Se o container estiver rodando ainda, podemos utilizar a flag -f(force);
+O container removido não é mais listado em docker ps -a;
+Exemplo: docker rm epic_rhodes, docker rm nginx_para_remover -f

@@ -1,0 +1,3 @@
+para executar uma imagem em um container utilize docker run <nome da imagem>
+Exemplo: docker run hello-world, docker run -it ubuntu bash(Isso vai abrir um terminal do Ubuntu dentro do Docker), docker run ubuntu(executa o container do Ubuntu, mas ele termina imediatamente — o Ubuntu não tem um processo ativo rodando por padrão.)
+Você pode encontrar imagens prontas no site hub.docker.com

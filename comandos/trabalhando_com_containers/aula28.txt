@@ -1,0 +1,2 @@
+O comando docker ps ou docker container ls exibe quais containers estão sendo executados no momento.
+Utilizando a flag -a, temos também todos os containers já executados na máquina. docker ps -a, docker container ls -a

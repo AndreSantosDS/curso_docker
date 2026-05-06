@@ -1,0 +1,18 @@
+docker run nginx
+Executa o container do NGINX em primeiro plano.
+O terminal fica “preso” mostrando logs do container.
+Se você fechar o terminal, o container para.
+
+docker run -d nginx
+Executa o container em segundo plano (detached mode).
+O terminal fica livre para você continuar usando.
+O container continua rodando mesmo após o comando terminar.
+O -d significa detached (desanexado).
+
+O NGINX é um servidor web muito usado para hospedar sites e aplicações.
+Resumidamente, ele pode:
+Servir páginas web (HTML, CSS, JS)
+Atuar como proxy reverso (encaminhar requisições para backend)
+Balancear carga entre servidores
+Melhorar desempenho e segurança de aplicações
+Ele é bastante usado junto com aplicações em Node.js, APIs e containers do Docker.

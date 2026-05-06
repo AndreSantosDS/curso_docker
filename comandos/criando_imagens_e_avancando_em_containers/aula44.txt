@@ -1,0 +1,6 @@
+Sempre que alterarmos o código de uma imagem vamos precisar fazer o build novamente;
+Para o docker é como se fosse uma imagem completamente nova;
+Após fazer o build vamos executá-la por outro id único criado com o docker run;
+
+Sempre que alterar o código da aplicação ou o Dockerfile, deve fazer o docker build .;
+Ele cria uma nova imagem e vc deve rodar o docker run para criar um novo container;

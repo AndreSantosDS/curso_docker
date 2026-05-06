@@ -1,0 +1,5 @@
+Podemos parar um container com o comando docker stop <id ou nome_do_container>;
+Desta maneira estaremos liberando recursos que estão sendo gastos pelo mesmo;
+Podemos verificar os containers rodando com o comando docker ps;
+
+Exemplo: docker stop be296a2239c3, docker stop inspiring_faraday

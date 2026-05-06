@@ -1,0 +1,4 @@
+Podemos verificar o que aconteceu em um container com comando logs;
+Utilizamos da seguinte maneira: docker logs <id ou name>;
+As últimas ações realizadas no container, serão exibidas no terminal;
+Exemplo: docker logs nginx_app, docker logs 607d476fd4a3

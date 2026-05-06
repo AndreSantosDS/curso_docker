@@ -1,0 +1,6 @@
+Podemos fazer o download de alguma imagem do hub e deixá-la disponível em nosso ambiente;
+Vamos utilizar o comando docker pull <imagem>;
+Dessa maneira, caso se use em outro container, a imagem já estará pronta para ser utilizada;
+
+docker pull python 
+docker run -it python

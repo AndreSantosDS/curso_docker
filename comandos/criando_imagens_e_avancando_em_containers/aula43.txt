@@ -1,0 +1,44 @@
+Para executar a imagem primeiramente vamos precisar fazer o build;
+O comando é docker build <diretório da imagem>;
+Depois vamos utilizar o docker run <imagem> para executá-la;
+
+docker build .
+o . representa a pasta do seu projeto na sua máquina.
+Exemplo:
+meu-projeto/
+├── Dockerfile
+├── package.json
+├── app.js
+└── routes/
+O Docker pega essa pasta como contexto e começa a executar o Dockerfile linha por linha.
+Depois ele chega em: WORKDIR /app
+e cria (ou passa a usar) a pasta /app dentro do container.
+Sua máquina
+(meu-projeto)
+        ↓
+docker build .
+        ↓
+Docker lê o Dockerfile
+        ↓
+Cria container temporário
+        ↓
+WORKDIR /app
+(cria /app dentro do container)
+        ↓
+COPY package*.json .
+(copia para /app)
+        ↓
+COPY . .
+(copia o resto do projeto para /app)
+
+docker run 37904613c803 -> id da imagem
+docker ps
+docker stop c03afa823b9e -> id do container
+docker ps
+docker run -d -p 3000:3000 37904613c803(id imagem) -> ele cria um novo container, só que com uma porta
+docker ps
+docker stop 4101211129b7
+docker ps
+docker run -d -p 3000:3000 --name meu_node 37904613c803(id imagem) -> ao invés de executar os dois doker run anteriores, vc pode executar esse docker run, para evitar de criar containers desnecessários
+docker ps
+no navegador localhost:3000

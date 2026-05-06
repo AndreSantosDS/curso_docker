@@ -1,0 +1,4 @@
+Todo comando no docker tem acesso a uma flag --help;
+Utilizando desta maneira, podemos ver todas as opções disponíveis nos comandos;
+Para relembrar algo ou executar uma terefa diferente com o mesmo;
+Ex: docker run --help, docker images --help;
