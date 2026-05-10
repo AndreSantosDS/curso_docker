@@ -1,0 +1,7 @@
+Removendo container após utilizar
+
+Um container pode ser automaticamente deletado após sua utilização;
+Para isso vamos utilizar a flag --rm;
+O comando seria: docker run --rm <container>;
+Desta maneira economizamos espaço no computador e deixamos o ambiente mais organizado;
+Exemplo: docker run -d -p 3000:3000 --name node_diferente --rm d3f728b8fa0d

@@ -1,0 +1,10 @@
+Enviando atualização de imagem
+
+Para enviar uma atualização vamos primeiramente fazer o build;
+Trocando a tag da imagem para a versão atualizada;
+Depois vamos fazer um push novamente para o repositório;
+Assim todas as versões estarão disponíveis para serem utilizadas;
+
+Depois de ter feito as alterações rode o comando docker build -t andresantos3/nodeteste:novaversao .
+
+E depois de ter feito o build das alterações na imagem e so subir as alterações para o Hub com o comando docker push andresantos3/nodeteste:novaversao

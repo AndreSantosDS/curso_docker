@@ -1,0 +1,6 @@
+Verificar dados de um container
+
+Para verificar diversas informações como: id, data de criação, imagem e muito mais;
+Utilizamos o comando docker inspect <container>
+Desta maneira conseguimos entender como o container está configurado;
+Exemplo: docker inspect node_diferente2

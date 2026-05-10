@@ -1,0 +1,12 @@
+Enviando imagem para o Docker Hub
+
+Para enviar uma imagem nossa ao Docker Hub utilizamos o comando docker push <imagem>;
+Porém antes vamos precisar criar o repositório para a mesma no site do Hub;
+Também será necessário estar autenticado;
+
+Depois de criar o repositorio, no terminal rode o comando com o nome do seu perfil e o nome do repositorio;
+
+docker build -t andresantos3/nodeteste .
+docker push andresantos3/nodeteste
+
+Se vc não tiver mais a imagem no seu pc e so baixar a imagem do Hub, utilizando o comando docker pull andresantos3/nodeteste

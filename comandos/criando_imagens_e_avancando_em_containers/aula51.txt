@@ -1,0 +1,6 @@
+Comando start interativo
+
+A flag -i pode ser utilizada com o comando start também;
+Ou seja, não precisamos criar um novo container para utilizá-lo no terminal;
+O comando é: docker start -i <container>
+Exemplo: docker start -i 1b52838a439e 
