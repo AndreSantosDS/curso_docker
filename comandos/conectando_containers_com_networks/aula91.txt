@@ -1,0 +1,7 @@
+Removendo redes em massa
+
+Podemos remover redes de forma simples também: docker network prune;
+Assim todas as redes não utilizadas no momento serão removidas;
+Receberemos uma mensagem de confirmação do Docker antes da ação ser executada;
+
+docker network prune
